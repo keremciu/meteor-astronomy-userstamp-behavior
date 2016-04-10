@@ -8,14 +8,15 @@ If you'd like to use this package you need to use Astronomy v2.
 
 # Documentation
 
-CreatedBy is a String field.
+CreatedBy is a **String** field.
 - keeps the userid who created the document.
 
-UpdatedBy is a Array field.
+UpdatedBy is a **Array** field.
 - keeps every (different) userid who changed the document.
 
 You can add the behavior like this:
 
+```javascript
 const Model = Astro.Class.create({
   name: 'Model',
   collection: ...,
@@ -31,9 +32,11 @@ const Model = Astro.Class.create({
     },
   },
 });
+```
 
 If you would like to use the behavior with the Meteor Accounts, you can fix the problem like this:
 
+```javascript
 Accounts.onCreateUser(function (options, user) {
   ... codes
 
@@ -41,3 +44,4 @@ Accounts.onCreateUser(function (options, user) {
 
   ... codes
 });
+```
