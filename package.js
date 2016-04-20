@@ -1,6 +1,6 @@
 Package.describe({
   name: 'keremciu:astronomy-userstamp-behavior',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Userstamp behavior for Meteor Astronomy',
   git: 'https://github.com/keremciu/meteor-astronomy-userstamp-behavior.git'
 });
